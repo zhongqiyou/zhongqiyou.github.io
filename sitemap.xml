@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhongqiyou.github.io/about/index.html</loc>
+    
+    <lastmod>2019-12-28T15:45:11.598Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhongqiyou.github.io/books/index.html</loc>
+    
+    <lastmod>2019-12-28T13:31:51.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhongqiyou.github.io/2019/12/25/introduce/</loc>
+    
+    <lastmod>2019-12-28T13:30:05.451Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhongqiyou.github.io/2019/12/26/demo/</loc>
+    
+    <lastmod>2019-12-26T04:30:36.976Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhongqiyou.github.io/categories/index.html</loc>
     
     <lastmod>2019-12-25T08:34:52.214Z</lastmod>
@@ -12,34 +40,6 @@
     <loc>https://zhongqiyou.github.io/test/index.html</loc>
     
     <lastmod>2019-12-25T07:28:01.416Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/2019/12/25/demo/</loc>
-    
-    <lastmod>2019-12-24T09:17:28.179Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/2019/12/25/hello-world/</loc>
-    
-    <lastmod>2019-12-24T08:35:46.459Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/about/index.html</loc>
-    
-    <lastmod>2019-12-24T07:52:51.661Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/books/index.html</loc>
-    
-    <lastmod>2019-12-24T07:52:51.661Z</lastmod>
     
   </url>
   

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhongqiyou.github.io/"/>
-  <updated>2019-12-24T08:35:46.459Z</updated>
+  <updated>2019-12-26T04:30:36.976Z</updated>
   <id>https://zhongqiyou.github.io/</id>
   
   <author>
@@ -17,20 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://zhongqiyou.github.io/2019/12/25/hello-world/"/>
-    <id>https://zhongqiyou.github.io/2019/12/25/hello-world/</id>
-    <published>2019-12-25T08:17:31.541Z</published>
-    <updated>2019-12-24T08:35:46.459Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <title>demo</title>
+    <link href="https://zhongqiyou.github.io/2019/12/26/demo/"/>
+    <id>https://zhongqiyou.github.io/2019/12/26/demo/</id>
+    <published>2019-12-26T04:30:36.976Z</published>
+    <updated>2019-12-26T04:30:36.976Z</updated>
     
     <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
     
     </summary>
     
@@ -39,25 +32,28 @@
   </entry>
   
   <entry>
-    <title>demo</title>
-    <link href="https://zhongqiyou.github.io/2019/12/25/demo/"/>
-    <id>https://zhongqiyou.github.io/2019/12/25/demo/</id>
-    <published>2019-12-25T08:17:31.539Z</published>
-    <updated>2019-12-24T09:17:28.179Z</updated>
+    <title>自我介绍</title>
+    <link href="https://zhongqiyou.github.io/2019/12/25/introduce/"/>
+    <id>https://zhongqiyou.github.io/2019/12/25/introduce/</id>
+    <published>2019-12-25T08:17:31.541Z</published>
+    <updated>2019-12-28T13:30:05.451Z</updated>
     
-    <content type="html"><![CDATA[<hr><h2 id="title-七次测试"><a href="#title-七次测试" class="headerlink" title="title: 七次测试"></a>title: 七次测试</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="本人真实姓名叫：钟启有"><a href="#本人真实姓名叫：钟启有" class="headerlink" title="本人真实姓名叫：钟启有"></a>本人真实姓名叫：钟启有</h2><p>以后我会在我的博客这里 ， 分享一些 ， 原生代码。这些代码都是通过自己的理解来编写。<br>常用的轮播 ， 筛选 , 搜索 以及 笔记。比如：商品价格与销量：升序、降序。商品搜索。<br>这些代码都是可以自己去扩展…<br>个人详情介绍 ，可以转步到“关于”!</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;hr&gt;
-&lt;h2 id=&quot;title-七次测试&quot;&gt;&lt;a href=&quot;#title-七次测试&quot; class=&quot;headerlink&quot; title=&quot;title: 七次测试&quot;&gt;&lt;/a&gt;title: 七次测试&lt;/h2&gt;
+        &lt;h2 id=&quot;本人真实姓名叫：钟启有&quot;&gt;&lt;a href=&quot;#本人真实姓名叫：钟启有&quot; class=&quot;headerlink&quot; title=&quot;本人真实姓名叫：钟启有&quot;&gt;&lt;/a&gt;本人真实姓名叫：钟启有&lt;/h2&gt;&lt;p&gt;以后我会在我的博客这里 ， 分享一些 ， 原生代码。这些代码都是通过
       
     
     </summary>
     
     
+      <category term="个人" scheme="https://zhongqiyou.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
+    
+    
+      <category term="个人" scheme="https://zhongqiyou.github.io/tags/%E4%B8%AA%E4%BA%BA/"/>
     
   </entry>
   
