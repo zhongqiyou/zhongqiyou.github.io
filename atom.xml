@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhongqiyou.github.io/"/>
-  <updated>2019-12-30T09:26:58.128Z</updated>
+  <updated>2019-12-30T15:37:29.079Z</updated>
   <id>https://zhongqiyou.github.io/</id>
   
   <author>
@@ -17,28 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>商品标题无缝轮播---简单无脚本</title>
+    <title>通知文字轮播---简单无脚本</title>
     <link href="https://zhongqiyou.github.io/2019/12/30/wheelplanting/"/>
     <id>https://zhongqiyou.github.io/2019/12/30/wheelplanting/</id>
-    <published>2019-12-30T09:18:53.135Z</published>
-    <updated>2019-12-30T09:26:58.128Z</updated>
+    <published>2019-12-30T09:32:02.791Z</published>
+    <updated>2019-12-30T15:37:29.079Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="废话不多说-，-先上效果图"><a href="#废话不多说-，-先上效果图" class="headerlink" title="废话不多说 ， 先上效果图"></a>废话不多说 ， 先上效果图</h3><p><img src="./images/title2.gif" alt="title"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2019/12/30/wheelplanting/title.gif" alt="title"></p> 123]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;废话不多说-，-先上效果图&quot;&gt;&lt;a href=&quot;#废话不多说-，-先上效果图&quot; class=&quot;headerlink&quot; title=&quot;废话不多说 ， 先上效果图&quot;&gt;&lt;/a&gt;废话不多说 ， 先上效果图&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;./images/title2.
+        &lt;p&gt;&lt;img src=&quot;/2019/12/30/wheelplanting/title.gif&quot; alt=&quot;title&quot;&gt;&lt;/p&gt;
+ 123
       
     
     </summary>
     
     
-      <category term="原生" scheme="https://zhongqiyou.github.io/categories/%E5%8E%9F%E7%94%9F/"/>
+      <category term="个人" scheme="https://zhongqiyou.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
     
     
-      <category term="原生" scheme="https://zhongqiyou.github.io/tags/%E5%8E%9F%E7%94%9F/"/>
+      <category term="个人" scheme="https://zhongqiyou.github.io/tags/%E4%B8%AA%E4%BA%BA/"/>
     
   </entry>
   
@@ -47,9 +48,9 @@
     <link href="https://zhongqiyou.github.io/2019/12/25/introduce/"/>
     <id>https://zhongqiyou.github.io/2019/12/25/introduce/</id>
     <published>2019-12-25T08:17:31.541Z</published>
-    <updated>2019-12-30T09:26:41.873Z</updated>
+    <updated>2019-12-30T15:05:57.975Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="本人真实姓名叫：钟启有"><a href="#本人真实姓名叫：钟启有" class="headerlink" title="本人真实姓名叫：钟启有"></a>本人真实姓名叫：钟启有</h2><p>以后我会在我的博客这里 ， 分享一些 ， 原生代码。这些代码都是通过自己的理解来编写。<br>常用的轮播 ， 筛选 , 搜索 以及 笔记。比如：商品价格与销量：升序、降序。商品搜索…<br>个人详情介绍 ，可以移步到“关于”!</p><p><img src="./images/title2.gif" alt="title"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="本人真实姓名叫：钟启有"><a href="#本人真实姓名叫：钟启有" class="headerlink" title="本人真实姓名叫：钟启有"></a>本人真实姓名叫：钟启有</h2><p>以后我会在我的博客这里 ， 分享一些 ， 原生代码。这些代码都是通过自己的理解来编写。<br>常用的轮播 ， 筛选 , 搜索 以及 笔记。比如：商品价格与销量：升序、降序。商品搜索…<br>个人详情介绍 ，可以移步到“关于”!</p>]]></content>
     
     <summary type="html">
     
