@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhongqiyou.github.io/"/>
-  <updated>2019-12-30T15:37:29.079Z</updated>
+  <updated>2020-01-05T03:38:26.750Z</updated>
   <id>https://zhongqiyou.github.io/</id>
   
   <author>
@@ -17,29 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>通知文字轮播---简单无脚本</title>
+    <title>通知文字轮播---纯css-&gt;简单无脚本实现效果</title>
     <link href="https://zhongqiyou.github.io/2019/12/30/wheelplanting/"/>
     <id>https://zhongqiyou.github.io/2019/12/30/wheelplanting/</id>
     <published>2019-12-30T09:32:02.791Z</published>
-    <updated>2019-12-30T15:37:29.079Z</updated>
+    <updated>2020-01-05T03:38:26.750Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2019/12/30/wheelplanting/title.gif" alt="title"></p> 123]]></content>
+    <content type="html"><![CDATA[<h2 id="文字轮播，可根据自己的要求来扩展-亲测可用"><a href="#文字轮播，可根据自己的要求来扩展-亲测可用" class="headerlink" title="文字轮播，可根据自己的要求来扩展 , 亲测可用"></a>文字轮播，可根据自己的要求来扩展 , 亲测可用</h2><h2 id="效果图："><a href="#效果图：" class="headerlink" title="效果图："></a>效果图：</h2><p><img src="https://s2.ax1x.com/2020/01/05/lBai8A.gif" alt="文字轮播"></p><h3 id="接下来是源码："><a href="#接下来是源码：" class="headerlink" title="接下来是源码："></a>接下来是源码：</h3><p>css样式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt; </span><br><span class="line">* &#123;</span><br><span class="line">       margin: 0;</span><br><span class="line">       padding: 0;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   .container &#123;</span><br><span class="line">       width: 250px;</span><br><span class="line">       height: 30px;</span><br><span class="line">       border-radius: 2px;</span><br><span class="line">       background: red;</span><br><span class="line">       overflow: hidden;</span><br><span class="line">       line-height: 30px;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   .container ul &#123;</span><br><span class="line">       width: 250px;</span><br><span class="line">       height: 150px;</span><br><span class="line">       animation: autoFunText 8s infinite;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">   @keyframes autoFunText &#123;</span><br><span class="line"></span><br><span class="line">       0% &#123;</span><br><span class="line">           margin-top: 0;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       20% &#123;</span><br><span class="line">           margin-top: -30px;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       40% &#123;</span><br><span class="line">           margin-top: -60px;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       60% &#123;</span><br><span class="line">           margin-top: -90px;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       80% &#123;</span><br><span class="line">           margin-top: -120px;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       100% &#123;</span><br><span class="line">           margin-top: -150px;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   .container li &#123;</span><br><span class="line">       line-height: 30px;</span><br><span class="line">   &#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure><p>HTML源码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;container&quot;&gt;</span><br><span class="line">        &lt;ul&gt;</span><br><span class="line">            &lt;li&gt;我是第一个广告文本&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li&gt;我是第二个广告文本&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li&gt;我是第三个广告文本&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li&gt;我是第四个广告文本&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li&gt;我是第五个广告文本&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li&gt;我是第一个广告文本&lt;&#x2F;li&gt;</span><br><span class="line">        &lt;&#x2F;ul&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure><p>以上就是本文的全部内容 ,  希望对大家的学习有所帮助…</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2019/12/30/wheelplanting/title.gif&quot; alt=&quot;title&quot;&gt;&lt;/p&gt;
- 123
+        &lt;h2 id=&quot;文字轮播，可根据自己的要求来扩展-亲测可用&quot;&gt;&lt;a href=&quot;#文字轮播，可根据自己的要求来扩展-亲测可用&quot; class=&quot;headerlink&quot; title=&quot;文字轮播，可根据自己的要求来扩展 , 亲测可用&quot;&gt;&lt;/a&gt;文字轮播，可根据自己的要求来扩展 , 亲测
       
     
     </summary>
     
     
-      <category term="个人" scheme="https://zhongqiyou.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
+      <category term="原生" scheme="https://zhongqiyou.github.io/categories/%E5%8E%9F%E7%94%9F/"/>
     
     
-      <category term="个人" scheme="https://zhongqiyou.github.io/tags/%E4%B8%AA%E4%BA%BA/"/>
+      <category term="原生" scheme="https://zhongqiyou.github.io/tags/%E5%8E%9F%E7%94%9F/"/>
     
   </entry>
   
@@ -48,7 +47,7 @@
     <link href="https://zhongqiyou.github.io/2019/12/25/introduce/"/>
     <id>https://zhongqiyou.github.io/2019/12/25/introduce/</id>
     <published>2019-12-25T08:17:31.541Z</published>
-    <updated>2019-12-30T15:05:57.975Z</updated>
+    <updated>2019-12-30T16:02:03.597Z</updated>
     
     <content type="html"><![CDATA[<h2 id="本人真实姓名叫：钟启有"><a href="#本人真实姓名叫：钟启有" class="headerlink" title="本人真实姓名叫：钟启有"></a>本人真实姓名叫：钟启有</h2><p>以后我会在我的博客这里 ， 分享一些 ， 原生代码。这些代码都是通过自己的理解来编写。<br>常用的轮播 ， 筛选 , 搜索 以及 笔记。比如：商品价格与销量：升序、降序。商品搜索…<br>个人详情介绍 ，可以移步到“关于”!</p>]]></content>
     
