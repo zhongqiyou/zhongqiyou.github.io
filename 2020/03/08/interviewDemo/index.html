@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>面试遇题1 | Hexo</title>
+  <meta name="description" content="Demo来源：上一年的二轮面试 ，面试官考的小demo，限时：2小时。 结果：回去等消息 分享:目前编写完成，正式分享出来。为了页面美观，用bootstrap（UI）搭建。 本文涉及技术：html、css、javascript、bootstrap4、vue、jquery 效果视屏链接：https:&#x2F;&#x2F;v.youku.com&#x2F;v_show&#x2F;id_XNDU3ODYyODQxNg&#x3D;&#x3D;.html 接下来是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试遇题1">
+<meta property="og:url" content="https://zhongqiyou.github.io/2020/03/08/interviewDemo/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Demo来源：上一年的二轮面试 ，面试官考的小demo，限时：2小时。 结果：回去等消息 分享:目前编写完成，正式分享出来。为了页面美观，用bootstrap（UI）搭建。 本文涉及技术：html、css、javascript、bootstrap4、vue、jquery 效果视屏链接：https:&#x2F;&#x2F;v.youku.com&#x2F;v_show&#x2F;id_XNDU3ODYyODQxNg&#x3D;&#x3D;.html 接下来是">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-08T05:00:01.563Z">
+<meta property="article:modified_time" content="2020-03-08T06:45:07.775Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="面试题">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://zhongqiyou.github.io/2020/03/08/interviewDemo/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/zhongqiyou" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">钟先生</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> ZhanJiang, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/zhongqiyou" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AE%E6%92%AD/">轮播</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8E%9F%E7%94%9F/" rel="tag">原生</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/" rel="tag">自我介绍</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/%E5%8E%9F%E7%94%9F/" style="font-size: 14px;">原生</a> <a href="/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/" style="font-size: 13px;">自我介绍</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 13px;">面试题</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+              </p>
+              <p class="item-title">
+                <a href="/2020/03/08/interviewDemo/" class="title">面试遇题1</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-03-08T05:00:01.563Z" itemprop="datePublished">2020-03-08</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E8%BD%AE%E6%92%AD/">轮播</a>
+              </p>
+              <p class="item-title">
+                <a href="/2020/02/23/wheelpanting3/" class="title">图片无缝轮播(按钮控制+自动切换+鼠标移入/移出)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-02-23T15:49:24.239Z" itemprop="datePublished">2020-02-23</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E8%BD%AE%E6%92%AD/">轮播</a>
+              </p>
+              <p class="item-title">
+                <a href="/2020/02/20/wheelpanting2/" class="title">透明渐变图片轮播(按钮控制 + 自动切换)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-02-19T16:46:11.990Z" itemprop="datePublished">2020-02-20</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E8%BD%AE%E6%92%AD/">轮播</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/12/30/wheelplanting/" class="title">通知轮播(无脚本)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-12-30T09:32:02.791Z" itemprop="datePublished">2019-12-30</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/12/25/introduce/" class="title">自我介绍</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-12-25T08:17:31.541Z" itemprop="datePublished">2019-12-25</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-interviewDemo" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面试遇题1
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2020/03/08/interviewDemo/" class="article-date">
+	  <time datetime="2020-03-08T05:00:01.563Z" itemprop="datePublished">2020-03-08</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/08/interviewDemo/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.9k(字)</span>
+	
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h4 id="Demo来源："><a href="#Demo来源：" class="headerlink" title="Demo来源："></a>Demo来源：</h4><p>上一年的二轮面试 ，面试官考的小demo，限时：2小时。</p>
+<h4 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h4><p>回去等消息</p>
+<h2 id="分享"><a href="#分享" class="headerlink" title="分享:"></a>分享:</h2><p>目前编写完成，正式分享出来。为了页面美观，用bootstrap（UI）搭建。</p>
+<h2 id="本文涉及技术："><a href="#本文涉及技术：" class="headerlink" title="本文涉及技术："></a>本文涉及技术：</h2><p>html、css、javascript、bootstrap4、vue、jquery</p>
+<h2 id="效果视屏链接："><a href="#效果视屏链接：" class="headerlink" title="效果视屏链接："></a>效果视屏链接：</h2><p><a href="https://v.youku.com/v_show/id_XNDU3ODYyODQxNg==.html" target="_blank" rel="noopener">https://v.youku.com/v_show/id_XNDU3ODYyODQxNg==.html</a></p>
+<h3 id="接下来是源代码："><a href="#接下来是源代码：" class="headerlink" title="接下来是源代码："></a>接下来是源代码：</h3><p>html布局</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class&#x3D;&quot;container&quot;&gt;</span><br><span class="line">            &lt;!-- 添加商品start (添加按钮)--&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;input-margin&quot;&gt;</span><br><span class="line">                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#exampleModal&quot;&gt;</span><br><span class="line">                    添加商品</span><br><span class="line">                &lt;&#x2F;button&gt;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;!-- Modal --&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;exampleModal&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;exampleModalLabel&quot;</span><br><span class="line">                aria-hidden&#x3D;&quot;true&quot;&gt;</span><br><span class="line">                &lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;</span><br><span class="line">                    &lt;div class&#x3D;&quot;modal-content&quot;&gt;</span><br><span class="line">                        &lt;div class&#x3D;&quot;modal-header&quot;&gt;</span><br><span class="line">                            &lt;h5 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;exampleModalLabel&quot;&gt;请输入商品名称&lt;&#x2F;h5&gt;</span><br><span class="line">                            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;</span><br><span class="line">                                &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;&#x2F;span&gt;</span><br><span class="line">                            &lt;&#x2F;button&gt;</span><br><span class="line">                        &lt;&#x2F;div&gt;</span><br><span class="line">                        &lt;div class&#x3D;&quot;modal-body&quot;&gt;</span><br><span class="line">                            &lt;div class&#x3D;&quot;input-group mb-3&quot;&gt;</span><br><span class="line">                                &lt;div class&#x3D;&quot;input-group-prepend&quot;&gt;</span><br><span class="line">                                    &lt;span class&#x3D;&quot;input-group-text&quot;&gt;商品名称：&lt;&#x2F;span&gt;</span><br><span class="line">                                &lt;&#x2F;div&gt;</span><br><span class="line">                                &lt;input type&#x3D;&quot;text&quot; ref&#x3D;&quot;control&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;tradeName&quot;&gt;</span><br><span class="line">                            &lt;&#x2F;div&gt;</span><br><span class="line">                            &lt;p class&#x3D;&quot;red&quot; v-if&#x3D;&quot;textSwi&quot;&gt;商品名称不能为空 , 请填写&lt;&#x2F;p&gt;</span><br><span class="line">                        &lt;&#x2F;div&gt;</span><br><span class="line">                        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;</span><br><span class="line">                            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;取消&lt;&#x2F;button&gt;</span><br><span class="line">                            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; :data-dismiss&#x3D;&quot;modal&quot;</span><br><span class="line">                                @click&#x3D;&quot;onhidden&quot;&gt;确定&lt;&#x2F;button&gt;</span><br><span class="line">                        &lt;&#x2F;div&gt;</span><br><span class="line">                    &lt;&#x2F;div&gt;</span><br><span class="line">                &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;!-- 不同商品状态查看start (单选按钮)--&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;custom-control custom-radio inline input-margin&quot; v-for&#x3D;&quot;(value , index) in choice&quot; :key&#x3D;&quot;index&quot;&gt;</span><br><span class="line">                &lt;input type&#x3D;&quot;radio&quot; :id&#x3D;&quot;&#39;customRadio&#39;+index&quot; :value&#x3D;&#39;value.choiceName&#39; v-model&#x3D;&quot;radioState&quot;</span><br><span class="line">                    class&#x3D;&quot;custom-control-input&quot;&gt;</span><br><span class="line">                &lt;label class&#x3D;&quot;custom-control-label&quot; :for&#x3D;&quot;&#39;customRadio&#39;+index&quot;&gt;&#123;&#123;value.title&#125;&#125;&lt;&#x2F;label&gt;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;!-- 不同商品数目展示start (不同复选框勾选数目)--&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary btn-margin&quot;&gt;</span><br><span class="line">                    全部商品 &lt;span class&#x3D;&quot;badge badge-light&quot;&gt;&#123;&#123;commodity.length&#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">                &lt;&#x2F;button&gt;</span><br><span class="line">                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success btn-margin&quot;&gt;</span><br><span class="line">                    已选商品 &lt;span class&#x3D;&quot;badge badge-light&quot;&gt;&#123;&#123;yesArr.length&#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">                &lt;&#x2F;button&gt;</span><br><span class="line">                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger btn-margin&quot;&gt;</span><br><span class="line">                    未选商品 &lt;span class&#x3D;&quot;badge badge-light&quot;&gt;&#123;&#123;noArr.length&#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">                &lt;&#x2F;button&gt;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;!-- 选择商品start (商品勾选)--&gt;</span><br><span class="line">            &lt;ul class&#x3D;&quot;list-group&quot;&gt;</span><br><span class="line">                &lt;li class&#x3D;&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span><br><span class="line">                    v-for&#x3D;&quot;(value, index) in allArrSwi&quot; :key&#x3D;&quot;index&quot; @dblclick&#x3D;&quot;getEdit(index)&quot;&gt;</span><br><span class="line">                    &lt;div class&#x3D;&quot;custom-control custom-checkbox&quot;&gt;</span><br><span class="line">                        &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;custom-control-input&quot; :id&#x3D;&quot;&#39;customCheck1&#39;+index&quot;</span><br><span class="line">                            v-model&#x3D;&quot;value.checked&quot;&gt;</span><br><span class="line">                        &lt;label class&#x3D;&quot;custom-control-label&quot; :for&#x3D;&quot;&#39;customCheck1&#39;+index&quot;&gt;</span><br><span class="line">                            &#123;&#123;value.title&#125;&#125;</span><br><span class="line">                            &lt;div class&#x3D;&quot;input-group mb-3&quot; v-show&#x3D;&quot;value.edit&quot;&gt;</span><br><span class="line">                                &lt;input type&#x3D;&quot;text&quot; @keyup.enter&#x3D;&quot;complete(index)&quot; class&#x3D;&quot;form-control&quot; ref&#x3D;&quot;title&quot;</span><br><span class="line">                                    :value&#x3D;&quot;value.copy&quot; placeholder&#x3D;&quot;Username&quot;&gt;</span><br><span class="line">                            &lt;&#x2F;div&gt;</span><br><span class="line">                        &lt;&#x2F;label&gt;</span><br><span class="line">                    &lt;&#x2F;div&gt;</span><br><span class="line">                    &lt;span class&#x3D;&quot;badge badge-primary badge-pill cursor&quot; @click&#x3D;&quot;onDel(value.title)&quot;&gt;X&lt;&#x2F;span&gt;</span><br><span class="line">                &lt;&#x2F;li&gt;</span><br><span class="line">            &lt;&#x2F;ul&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+<p>js脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- bootstrap + vue --&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;jquery@3.4.1&#x2F;dist&#x2F;jquery.slim.min.js&quot;</span><br><span class="line">    integrity&#x3D;&quot;sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n&quot;</span><br><span class="line">    crossorigin&#x3D;&quot;anonymous&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;popper.js@1.16.0&#x2F;dist&#x2F;umd&#x2F;popper.min.js&quot;</span><br><span class="line">    integrity&#x3D;&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot;</span><br><span class="line">    crossorigin&#x3D;&quot;anonymous&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;bootstrap@4.4.1&#x2F;dist&#x2F;js&#x2F;bootstrap.min.js&quot;</span><br><span class="line">    integrity&#x3D;&quot;sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6&quot;</span><br><span class="line">    crossorigin&#x3D;&quot;anonymous&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.staticfile.org&#x2F;vue&#x2F;2.4.2&#x2F;vue.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line">    var vue &#x3D; new Vue(&#123;</span><br><span class="line">        el: &quot;#app&quot;,</span><br><span class="line">        data() &#123;</span><br><span class="line">            return &#123;</span><br><span class="line">                choice: [</span><br><span class="line">                    &#123; title: &quot;全部&quot;, choiceName: &quot;all&quot; &#125;,</span><br><span class="line">                    &#123; title: &quot;已选&quot;, choiceName: &quot;yes&quot; &#125;,</span><br><span class="line">                    &#123; title: &quot;未选&quot;, choiceName: &quot;no&quot; &#125;</span><br><span class="line">                ],</span><br><span class="line">                commodity: [</span><br><span class="line">                    &#x2F;&#x2F; 定义copy为了编辑商品input中value展示(展示旧值) ，edit为了 显示&#x2F;隐藏 编辑(input) ，checked为了更好捕捉复选框勾选状态</span><br><span class="line">                    &#123; title: &quot;小米&quot;, copy: &quot;小米&quot;, checked: false, edit: false &#125;,</span><br><span class="line">                    &#123; title: &quot;aphone&quot;, copy: &quot;aphone&quot;, checked: false, edit: false &#125;,</span><br><span class="line">                    &#123; title: &quot;魅族&quot;, copy: &quot;魅族&quot;, checked: false, edit: false &#125;,</span><br><span class="line">                    &#123; title: &quot;三星&quot;, copy: &quot;三星&quot;, checked: false, edit: false &#125;,</span><br><span class="line">                    &#123; title: &quot;诺基亚&quot;, copy: &quot;诺基亚&quot;, checked: false, edit: false &#125;</span><br><span class="line">                ],</span><br><span class="line">                modal: &quot;nomodal&quot;,&#x2F;&#x2F;bootstrap中的模态框 显示&#x2F;隐藏</span><br><span class="line">                textSwi: false,&#x2F;&#x2F;在模态框添加中 ， 如有输入错误，则显示</span><br><span class="line">                radioState: &quot;all&quot;,&#x2F;&#x2F;单选状态</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;</span><br><span class="line">            &#x2F;&#x2F;点击事件：添加商品判断 ， 如输入错误，则文字警告，否则有效添加 </span><br><span class="line">            onhidden() &#123;</span><br><span class="line">                if (this.$refs.control.value &#x3D;&#x3D; &quot;&quot;) &#123;</span><br><span class="line">                    this.textSwi &#x3D; true;</span><br><span class="line">                    this.modal &#x3D; &quot;nomodal&quot;;</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    this.commodity.push(&#123; title: this.$refs.control.value, copy: this.$refs.control.value, checked: false, edit: false &#125;)</span><br><span class="line">                    this.modal &#x3D; &quot;modal&quot;;</span><br><span class="line">                    this.textSwi &#x3D; false;</span><br><span class="line">                    this.$refs.control.value &#x3D; &quot;&quot;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#x2F;&#x2F;双击事件： 编辑商品 ，展示输入框（input）</span><br><span class="line">            getEdit(index) &#123;</span><br><span class="line">                this.allArrSwi[index].edit &#x3D; true;</span><br><span class="line">                this.allArrSwi[index].title &#x3D; &quot;&quot;;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#x2F;&#x2F; 回车事件：修改商品名称</span><br><span class="line">            complete(index) &#123;</span><br><span class="line">                this.allArrSwi[index].edit &#x3D; false;</span><br><span class="line">                this.allArrSwi[index].copy &#x3D; this.$refs.title[index].value;</span><br><span class="line">                this.allArrSwi[index].title &#x3D; this.$refs.title[index].value;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#x2F;&#x2F; 点击事件：删除指定商品</span><br><span class="line">            onDel(title) &#123;</span><br><span class="line">                let i &#x3D; -1;</span><br><span class="line">                this.commodity.forEach((value, index) &#x3D;&gt; &#123;</span><br><span class="line">                    if (value.title &#x3D;&#x3D; title) &#123;</span><br><span class="line">                        i &#x3D; index;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">                this.commodity.splice(i, 1);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        computed: &#123;</span><br><span class="line">            &#x2F;&#x2F; 勾选单选不同状态 ，展示商品</span><br><span class="line">            allArrSwi() &#123;</span><br><span class="line">                if (this.radioState &#x3D;&#x3D; &quot;all&quot;) &#123;</span><br><span class="line">                    return this.commodity;</span><br><span class="line">                &#125; else if (this.radioState &#x3D;&#x3D; &quot;yes&quot;) &#123;</span><br><span class="line">                    return this.yesArr;</span><br><span class="line">                &#125; else if (this.radioState &#x3D;&#x3D; &quot;no&quot;) &#123;</span><br><span class="line">                    return this.noArr;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#x2F;&#x2F; 已选商品</span><br><span class="line">            yesArr() &#123;</span><br><span class="line">                return this.commodity.filter((value, index) &#x3D;&gt; &#123;</span><br><span class="line">                    return value.checked &#x3D;&#x3D; true;</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;,</span><br><span class="line">            &#x2F;&#x2F; 未选商品</span><br><span class="line">            noArr() &#123;</span><br><span class="line">                return this.commodity.filter((value, index) &#x3D;&gt; &#123;</span><br><span class="line">                    return value.checked &#x3D;&#x3D; false;</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>css样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- bootstrap样式 --&gt;</span><br><span class="line">   &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;bootstrap@4.4.1&#x2F;dist&#x2F;css&#x2F;bootstrap.min.css&quot;</span><br><span class="line">       integrity&#x3D;&quot;sha384-Vkoo8x4CGsO3+Hhxv8T&#x2F;Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&quot; crossorigin&#x3D;&quot;anonymous&quot;&gt;</span><br><span class="line"> .inline &#123;</span><br><span class="line">       display: inline-block;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   .input-margin &#123;</span><br><span class="line">       margin: 10px;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   .btn-margin &#123;</span><br><span class="line">       margin: 0px 10px 10px 5px;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   .red &#123;</span><br><span class="line">       color: red;</span><br><span class="line">   &#125; </span><br><span class="line">   .cursor&#123;</span><br><span class="line">     cursor: pointer;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>以上就是本文的全部内容 ， 本文仅供参考~</p>
+<p>如有代码错误 或者 你也有自己更好的想法。可以在下方留言。我洗耳恭听，共同进步…</p>
+<p>我会及时做出更正 , 谢谢~</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://zhongqiyou.github.io/2020/03/08/interviewDemo/" title="面试遇题1" target="_blank" rel="external">https://zhongqiyou.github.io/2020/03/08/interviewDemo/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/zhongqiyou" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/zhongqiyou" target="_blank"><span class="text-dark">钟先生</span><small class="ml-1x"></small></a></h3>
+        <div>革命尚未成功 ，同志仍需努力！</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2020/02/23/wheelpanting3/" title="图片无缝轮播(按钮控制+自动切换+鼠标移入/移出)"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/zhongqiyou" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '4f943d14e7c6182e5416',
+    clientSecret: 'f3cbc554ce97b94a6f9f7d5c8434fa0e6838f3a8',
+    repo: 'comment',
+    owner: 'zhongqiyou',
+    admin: ['zhongqiyou'],
+    id: md5(location.pathname),
+    distractionFreeMode: true
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+
+
+
+
+</body>
+</html>
