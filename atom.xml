@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhongqiyou.github.io/"/>
-  <updated>2020-03-25T17:27:33.313Z</updated>
+  <updated>2020-04-18T16:52:33.683Z</updated>
   <id>https://zhongqiyou.github.io/</id>
   
   <author>
@@ -17,13 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>为什么要学习jquery与webpack？？？</title>
+    <link href="https://zhongqiyou.github.io/2020/04/19/jquery/"/>
+    <id>https://zhongqiyou.github.io/2020/04/19/jquery/</id>
+    <published>2020-04-18T16:03:18.045Z</published>
+    <updated>2020-04-18T16:52:33.683Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h2><p>如果你现在还是该专业学生或者自学者。还没有真正的在该行业工作过时。现在有一个项目要上线，有很多问题需要我们关注：在低版本IE的强检查时的标签符号，函数方法(addeventlistener、trim等)，css3样式（border、opacity、background-size等）都不兼容。</p><h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><h3 id="jquery简介："><a href="#jquery简介：" class="headerlink" title="jquery简介："></a>jquery简介：</h3><pre><code>封装一系列原生js提供我们使用，它能解决浏览器兼容函数方法问题存在。</code></pre><h3 id="webpack简介"><a href="#webpack简介" class="headerlink" title="webpack简介:"></a>webpack简介:</h3><pre><code>把你写的源代码，通过压缩，打包，转换，检查...一系列处理然浏览器识别的代码。比如：你写的js代码带有es6语法，底版的浏览器强检测标点符号，这些它都能帮我们搞。虽然现在都有很多的脚手架 ， 但是学习这个还是很有好处。比如:现在有vue-cli项目需要打包 ，但是在路由模板下，html中&lt;img src=&quot;&quot;&gt; 和 css中 background：url(&quot;&quot;)。这是你打包你会发现只有html中的图片出来。而css中的背景图片路径找不到，底层问题，还需要底层知识来解决：需要找到对应处理图片loader，修改publicPath: 属性</code></pre><p>以上就是本文的全部内容 ， 本文仅供参考~</p><p>如有代码错误 或者 你也有自己更好的想法。可以在下方留言。我洗耳恭听，共同进步…</p><p>我会及时做出更正 , 谢谢~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;存在问题&quot;&gt;&lt;a href=&quot;#存在问题&quot; class=&quot;headerlink&quot; title=&quot;存在问题&quot;&gt;&lt;/a&gt;存在问题&lt;/h2&gt;&lt;p&gt;如果你现在还是该专业学生或者自学者。还没有真正的在该行业工作过时。现在有一个项目要上线，有很多问题需要我们关注：在低版本IE
+      
+    
+    </summary>
+    
+    
+      <category term="jquery/webpack" scheme="https://zhongqiyou.github.io/categories/jquery-webpack/"/>
+    
+    
+      <category term="jquery/webpack" scheme="https://zhongqiyou.github.io/tags/jquery-webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AJAX终极封装（兼容IE）</title>
+    <link href="https://zhongqiyou.github.io/2020/04/18/ajax/"/>
+    <id>https://zhongqiyou.github.io/2020/04/18/ajax/</id>
+    <published>2020-04-18T15:21:16.838Z</published>
+    <updated>2020-04-18T16:02:31.986Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介ajax："><a href="#简介ajax：" class="headerlink" title="简介ajax："></a>简介ajax：</h2><p>AJAX 是与服务器交换数据并更新部分网页的艺术，在不重新加载整个页面的情况下。</p><h2 id="学习地址："><a href="#学习地址：" class="headerlink" title="学习地址："></a>学习地址：</h2><p><a href="https://www.w3school.com.cn/ajax/index.asp" target="_blank" rel="noopener">https://www.w3school.com.cn/ajax/index.asp</a></p><p>js代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;格式化数据（“&#123;name:&#39;zqy&#39;,age:21&#125; &#x3D;&gt; name&#x3D;zqy&amp;age&#x3D;23”）</span><br><span class="line">function format(data) &#123;</span><br><span class="line">    var arr &#x3D; [];</span><br><span class="line">    &#x2F;&#x2F; 兼容ie缓存问题:每次访问同一个url默认同一个结果</span><br><span class="line">    &#x2F;&#x2F; 所以解决方案 , 每一次请求不同的url </span><br><span class="line">    data.ran &#x3D; Math.ceil(Math.random() * 10); &#x2F;&#x2F;添加随机数</span><br><span class="line">    for (var key in data) &#123;</span><br><span class="line">        &#x2F;&#x2F; 在url中是不能出现中文的 ， 如果出现了中文需要转码 , 使用encodeURLComponent</span><br><span class="line">        arr.push(encodeURIComponent(key) + &quot;&#x3D;&quot; + encodeURIComponent(data[key]));</span><br><span class="line">    &#125;;</span><br><span class="line">    return arr.join(&quot;&amp;&quot;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">function ajax(options) &#123;</span><br><span class="line">    &#x2F;&#x2F; type(请求方式), url(请求地址), data(请求参数), time(请求超时时间), success(成功回调), error(失败回调)</span><br><span class="line">    var xml;</span><br><span class="line">    &#x2F;&#x2F; 兼容ie对象不同问题</span><br><span class="line">    if (window.XMLHttpRequest) &#123;</span><br><span class="line">        xml &#x3D; new XMLHttpRequest();</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        xml &#x3D; new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);</span><br><span class="line">    &#125;;</span><br><span class="line">    </span><br><span class="line">    if (options.type.toUpperCase() &#x3D;&#x3D; &quot;GET&quot;) &#123; &#x2F;&#x2F;不区分大小写</span><br><span class="line">        xml.open(options.type, options.url + &quot;?&quot; + format(options.data), true);</span><br><span class="line">        xml.send();</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        xml.open(options.type, options.url, true);</span><br><span class="line">        xml.setRequestHeader(&quot;Content-type&quot;, &quot;application&#x2F;x-www-form-urlencoded&quot;);</span><br><span class="line">        xml.send(format(options.data));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    xml.onreadystatechange &#x3D; function () &#123;</span><br><span class="line">        if (xml.readyState &#x3D;&#x3D;&#x3D; 4) &#123;</span><br><span class="line">            if (xml.status &#x3D;&#x3D;&#x3D; 200 || xml.status &#x3D;&#x3D;&#x3D; 304) &#123;</span><br><span class="line">                options.success(xml);</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                options.error(xml);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 超时终止请求</span><br><span class="line">    if (options.time) &#123;</span><br><span class="line">        setTimeout(function () &#123;</span><br><span class="line">            xml.abort();</span><br><span class="line">        &#125;, options.time);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;测试封装</span><br><span class="line"> ajax(&#123;</span><br><span class="line">        url: &quot;test.php&quot;,</span><br><span class="line">        type: &quot;post&quot;,</span><br><span class="line">        data: &#123;</span><br><span class="line">            &quot;name&quot;: &quot;zqy&quot;,</span><br><span class="line">            &quot;age&quot;: &quot;23&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        time: 3000,</span><br><span class="line">        success: function (res) &#123;</span><br><span class="line">            console.log(&quot;请求成功&quot; + res.responseText);</span><br><span class="line">        &#125;,</span><br><span class="line">        error: function (res) &#123;</span><br><span class="line">            console.log(&quot;请求失败&quot; + res)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 用对象作为参数 ，就不用顾虑参数的顺序问题。</span><br><span class="line">&#x2F;&#x2F; 参数想怎么传就怎么传。</span><br></pre></td></tr></table></figure><p>以上就是本文的全部内容 ， 本文仅供参考~</p><p>如有代码错误 或者 你也有自己更好的想法。可以在下方留言。我洗耳恭听，共同进步…</p><p>我会及时做出更正 , 谢谢~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介ajax：&quot;&gt;&lt;a href=&quot;#简介ajax：&quot; class=&quot;headerlink&quot; title=&quot;简介ajax：&quot;&gt;&lt;/a&gt;简介ajax：&lt;/h2&gt;&lt;p&gt;AJAX 是与服务器交换数据并更新部分网页的艺术，在不重新加载整个页面的情况下。&lt;/p&gt;
+&lt;h2 i
+      
+    
+    </summary>
+    
+    
+      <category term="ajax" scheme="https://zhongqiyou.github.io/categories/ajax/"/>
+    
+    
+      <category term="ajax" scheme="https://zhongqiyou.github.io/tags/ajax/"/>
+    
+  </entry>
+  
+  <entry>
     <title>谈谈记录的两个面试考题</title>
     <link href="https://zhongqiyou.github.io/2020/03/26/interviewChat/"/>
     <id>https://zhongqiyou.github.io/2020/03/26/interviewChat/</id>
     <published>2020-03-25T16:55:30.752Z</published>
-    <updated>2020-03-25T17:27:33.313Z</updated>
+    <updated>2020-04-18T15:17:25.150Z</updated>
     
-    <content type="html"><![CDATA[<p>在面试之前，复习是必不可少的准备。<br>面试过很多家公司，大概都是对我知识的全面基本了解，没有过直接上机编写一个小Demo。<br>我一直以来遇到的面试方式都是，考题，问答。比如：CSS\HTML5新特性，定位（相对/绝对/固定），清除浮动，对象，闭包，ajax请求，es6语法，webpack核心，vue主流框架方面知识。我一路走过来也见识了很多的考题，过后有不足我也及时学习，并把一些记录下来。</p>]]></content>
+    <content type="html"><![CDATA[<p>在面试之前，复习是必不可少的准备。<br>面试过很多家公司，大概都是对我知识的全面基本了解，没有过直接上机编写一个小Demo。<br>我一直以来遇到的面试方式都是，考题，问答。比如：CSS\HTML5新特性，定位（相对/绝对/固定），清除浮动，对象，闭包，ajax请求，es6语法，webpack核心，vue主流框架方面知识。我一路走过来也见识了很多的考题，过后有不足我也及时学习，并把一些记录下来。所以记录他们 ， 和我发朋友圈用意差不多。记录自己 ， 记录生活嘛！</p>]]></content>
     
     <summary type="html">
     
