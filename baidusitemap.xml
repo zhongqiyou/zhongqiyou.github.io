@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zhongqiyou.github.io/2020/04/19/jquery/</loc>
-    <lastmod>2020-04-18</lastmod>
+    <loc>https://zhongqiyou.github.io/2020/04/19/custom-content-scroll/</loc>
+    <lastmod>2020-04-19</lastmod>
+  </url>  <url>
+    <loc>https://zhongqiyou.github.io/2020/04/19/jquery-webpack/</loc>
+    <lastmod>2020-04-19</lastmod>
   </url>  <url>
     <loc>https://zhongqiyou.github.io/2020/04/18/ajax/</loc>
     <lastmod>2020-04-18</lastmod>
