@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhongqiyou.github.io/2020/04/27/function-class/</loc>
+    
+    <lastmod>2020-04-27T18:20:44.389Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhongqiyou.github.io/2020/04/18/ajax/</loc>
+    
+    <lastmod>2020-04-27T15:57:16.923Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhongqiyou.github.io/2020/04/19/custom-content-scroll/</loc>
     
     <lastmod>2020-04-19T05:39:10.087Z</lastmod>
@@ -9,16 +23,16 @@
   </url>
   
   <url>
-    <loc>https://zhongqiyou.github.io/2020/04/19/jquery-webpack/</loc>
+    <loc>https://zhongqiyou.github.io/images/custom-content-scroll/demo.html</loc>
     
-    <lastmod>2020-04-19T03:46:55.047Z</lastmod>
+    <lastmod>2020-04-19T05:33:05.002Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhongqiyou.github.io/2020/04/18/ajax/</loc>
+    <loc>https://zhongqiyou.github.io/2020/04/19/jquery-webpack/</loc>
     
-    <lastmod>2020-04-18T17:13:13.096Z</lastmod>
+    <lastmod>2020-04-19T03:46:55.047Z</lastmod>
     
   </url>
   
@@ -163,6 +177,13 @@
   </url>
   
   <url>
+    <loc>https://zhongqiyou.github.io/links/index.html</loc>
+    
+    <lastmod>2019-12-24T07:52:51.661Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhongqiyou.github.io/tags/index.html</loc>
     
     <lastmod>2019-12-24T07:52:51.661Z</lastmod>
@@ -171,13 +192,6 @@
   
   <url>
     <loc>https://zhongqiyou.github.io/repository/index.html</loc>
-    
-    <lastmod>2019-12-24T07:52:51.661Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/links/index.html</loc>
     
     <lastmod>2019-12-24T07:52:51.661Z</lastmod>
     

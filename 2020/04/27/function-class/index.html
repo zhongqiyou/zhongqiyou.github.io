@@ -17,21 +17,24 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>谈谈记录的两个面试考题 | Hexo</title>
-  <meta name="description" content="在面试之前，复习是必不可少的准备。面试过很多家公司，大概都是对我知识的全面基本了解，没有过直接上机编写一个小Demo。我一直以来遇到的面试方式都是，考题，问答。比如：CSS\HTML5新特性，定位（相对&#x2F;绝对&#x2F;固定），清除浮动，对象，闭包，ajax请求，es6语法，webpack核心，vue主流框架方面知识。我一路走过来也见识了很多的考题，过后有不足我也及时学习，并把一些记录下来。所以记录他们 ，">
+  <title>面向对象继承（Function与Class） | Hexo</title>
+  <meta name="description" content="什么是对象继承：生活例子：可以想象，如果一件东西或者一件事，都需要我们从零开始做。那么我们是不是需要很长时间，或者有些事没有前提条件下无法完成。比如:要用电脑干一些事情，那是不是先有人发明电脑，才有电脑可用。 代码例子：比如：Array对象相信都不陌生，它自带pop()、push()、join()、replace()等方法供我们使用。 总结：对象继承是，继承已有，为自己所用，加快开发效率与代码复用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="谈谈记录的两个面试考题">
-<meta property="og:url" content="https://zhongqiyou.github.io/2020/03/26/interviewChat/index.html">
+<meta property="og:title" content="面向对象继承（Function与Class）">
+<meta property="og:url" content="https://zhongqiyou.github.io/2020/04/27/function-class/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="在面试之前，复习是必不可少的准备。面试过很多家公司，大概都是对我知识的全面基本了解，没有过直接上机编写一个小Demo。我一直以来遇到的面试方式都是，考题，问答。比如：CSS\HTML5新特性，定位（相对&#x2F;绝对&#x2F;固定），清除浮动，对象，闭包，ajax请求，es6语法，webpack核心，vue主流框架方面知识。我一路走过来也见识了很多的考题，过后有不足我也及时学习，并把一些记录下来。所以记录他们 ，">
+<meta property="og:description" content="什么是对象继承：生活例子：可以想象，如果一件东西或者一件事，都需要我们从零开始做。那么我们是不是需要很长时间，或者有些事没有前提条件下无法完成。比如:要用电脑干一些事情，那是不是先有人发明电脑，才有电脑可用。 代码例子：比如：Array对象相信都不陌生，它自带pop()、push()、join()、replace()等方法供我们使用。 总结：对象继承是，继承已有，为自己所用，加快开发效率与代码复用">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-25T16:55:30.752Z">
-<meta property="article:modified_time" content="2020-04-18T15:17:25.150Z">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/28/Jh7CV0.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/04/28/Jh7Xo6.png">
+<meta property="article:published_time" content="2020-04-27T15:59:48.525Z">
+<meta property="article:modified_time" content="2020-04-27T18:20:44.389Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="面试题">
+<meta property="article:tag" content="ES">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/04/28/Jh7CV0.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://zhongqiyou.github.io/2020/03/26/interviewChat/index.html">
+  <link rel="canonical" href="https://zhongqiyou.github.io/2020/04/27/function-class/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -340,14 +343,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-interviewChat" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-function-class" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      谈谈记录的两个面试考题
+      面向对象继承（Function与Class）
     </h1>
   
 
@@ -355,20 +358,20 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/03/26/interviewChat/" class="article-date">
-	  <time datetime="2020-03-25T16:55:30.752Z" itemprop="datePublished">2020-03-26</time>
+	<a href="/2020/04/27/function-class/" class="article-date">
+	  <time datetime="2020-04-27T15:59:48.525Z" itemprop="datePublished">2020-04-27</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+    <a class="article-category-link" href="/categories/ES/">ES</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a>
+	<a class="article-tag-link" href="/tags/ES/" rel="tag">ES</a>
   </span>
 
 
@@ -381,10 +384,10 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/26/interviewChat/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/04/27/function-class/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 170(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 607(字)</span>
 	
 	
 
@@ -392,7 +395,20 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>在面试之前，复习是必不可少的准备。<br>面试过很多家公司，大概都是对我知识的全面基本了解，没有过直接上机编写一个小Demo。<br>我一直以来遇到的面试方式都是，考题，问答。比如：CSS\HTML5新特性，定位（相对/绝对/固定），清除浮动，对象，闭包，ajax请求，es6语法，webpack核心，vue主流框架方面知识。我一路走过来也见识了很多的考题，过后有不足我也及时学习，并把一些记录下来。所以记录他们 ， 和我发朋友圈用意差不多。记录自己 ， 记录生活嘛！</p>
+        <h2 id="什么是对象继承："><a href="#什么是对象继承：" class="headerlink" title="什么是对象继承："></a>什么是对象继承：</h2><p>生活例子：<br>可以想象，如果一件东西或者一件事，都需要我们从零开始做。那么我们是不是需要很长时间，或者有些事没有前提条件下无法完成。<br>比如:要用电脑干一些事情，那是不是先有人发明电脑，才有电脑可用。</p>
+<p>代码例子：<br>比如：Array对象相信都不陌生，它自带pop()、push()、join()、replace()等方法供我们使用。</p>
+<p>总结：对象继承是，继承已有，为自己所用，加快开发效率与代码复用。</p>
+<h4 id="知识复习地址"><a href="#知识复习地址" class="headerlink" title="知识复习地址:"></a>知识复习地址:</h4><p><a href="https://www.w3school.com.cn/js/js_object_prototypes.asp" target="_blank" rel="noopener">https://www.w3school.com.cn/js/js_object_prototypes.asp</a></p>
+<h4 id="Function继承（ES5）"><a href="#Function继承（ES5）" class="headerlink" title="Function继承（ES5）"></a>Function继承（ES5）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 创建一个函数</span><br><span class="line">    function Dog(name, age) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line">    Dog.prototype.nameLog &#x3D; function() &#123;</span><br><span class="line">        console.log(&quot;名字:&quot;, this.name);</span><br><span class="line">    &#125;</span><br><span class="line">    Dog.prototype.ageLog &#x3D; function() &#123;</span><br><span class="line">        console.log(&quot;年龄:&quot;, this.age);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 创建一个新函数</span><br><span class="line">    function newDog(name, age, addr) &#123;</span><br><span class="line">        Dog.call(this, name, age) &#x2F;&#x2F;把别人的方法为自己所用（改变this）。</span><br><span class="line">        this.addr &#x3D; addr; &#x2F;&#x2F;新增属性</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    newDog.prototype &#x3D; new Dog(); &#x2F;&#x2F;继承Dog</span><br><span class="line">    newDog.prototype.constructor &#x3D; newDog; &#x2F;&#x2F;把constructor指向自己(更正constructor)</span><br><span class="line">    &#x2F;&#x2F; 新增方法</span><br><span class="line">    newDog.prototype.addrLog &#x3D; function() &#123;</span><br><span class="line">        console.log(&quot;地址:&quot;, this.addr);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 调用继承与自身</span><br><span class="line">    var extendsDog &#x3D; new newDog(&quot;二哈&quot;, 9, &quot;外国&quot;);</span><br><span class="line">    extendsDog.nameLog();</span><br><span class="line">    extendsDog.ageLog();</span><br><span class="line">    extendsDog.addrLog();</span><br></pre></td></tr></table></figure>
+<p>如图：</p>
+<p><img src="https://s1.ax1x.com/2020/04/28/Jh7CV0.png" alt="Image text"></p>
+<h4 id="Class继承（ES6）"><a href="#Class继承（ES6）" class="headerlink" title="Class继承（ES6）"></a>Class继承（ES6）</h4><p>在没有出现Class之前，Function既是函数同时也是类。<br>所以Class出现好处之一 ， 把我们之前的function“归为一类”。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 创建一个类</span><br><span class="line">class People &#123;</span><br><span class="line">    constructor(name, age) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line">    nameLog() &#123;</span><br><span class="line">        console.log(&quot;姓名：&quot;, this.name);</span><br><span class="line">    &#125;</span><br><span class="line">    ageLog() &#123;</span><br><span class="line">        console.log(&quot;年龄:&quot;, this.age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 创建一个新类</span><br><span class="line">class newPeople extends People &#123;</span><br><span class="line">    constructor(name, age, addr, salary) &#123;</span><br><span class="line">            super(name, age); &#x2F;&#x2F;继承People(属性 以及 方法)</span><br><span class="line">            &#x2F;&#x2F; 新增属性</span><br><span class="line">            this.addr &#x3D; addr;</span><br><span class="line">            this.salary &#x3D; salary;</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F; 新增方法</span><br><span class="line">    addrLog() &#123;</span><br><span class="line">        console.log(&quot;地址：&quot;, this.addr);</span><br><span class="line">    &#125;</span><br><span class="line">    salaryLog() &#123;</span><br><span class="line">        console.log(&quot;薪资:&quot;, this.salary);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">var extendsPeople &#x3D; new newPeople(&quot;zqy&quot;, 23, &quot;湛江&quot;, 0.00);</span><br><span class="line">&#x2F;&#x2F; 调用继承与自身</span><br><span class="line">extendsPeople.nameLog();</span><br><span class="line">extendsPeople.ageLog();</span><br><span class="line">extendsPeople.addrLog();</span><br><span class="line">extendsPeople.salaryLog();</span><br></pre></td></tr></table></figure>
+<p>如图：</p>
+<p><img src="https://s1.ax1x.com/2020/04/28/Jh7Xo6.png" alt="Image text"></p>
+<p>以上就是本文的全部内容 ， 本文仅供参考~</p>
+<p>如有代码错误 或者 你也有自己更好的想法。可以在下方留言。我洗耳恭听，共同进步…</p>
+<p>我会及时做出更正 , 谢谢~</p>
 
       
     </div>
@@ -402,7 +418,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://zhongqiyou.github.io/2020/03/26/interviewChat/" title="谈谈记录的两个面试考题" target="_blank" rel="external">https://zhongqiyou.github.io/2020/03/26/interviewChat/</a>
+      <a href="https://zhongqiyou.github.io/2020/04/27/function-class/" title="面向对象继承（Function与Class）" target="_blank" rel="external">https://zhongqiyou.github.io/2020/04/27/function-class/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -448,13 +464,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2020/04/18/ajax/" title="AJAX终极封装（兼容IE）"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2020/03/24/interviewDemo2/" title="面试遇题2"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2020/04/19/custom-content-scroll/" title="jQuery 自定义（美化）滚动条 customcontentscroller 插件使用"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
