@@ -17,26 +17,25 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hexo</title>
-  <meta name="description" content="Document">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://zhongqiyou.github.io/images/%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD/index.html">
+  <title>1-1微信小程序云开发（数据库入门使用） | Hexo</title>
+  <meta name="description" content="一、数据库（官方简介）云开发提供了一个 JSON 数据库，顾名思义，数据库中的每条记录都是一个 JSON 格式的对象。一个数据库可以有多个集合（相当于关系型数据中的表），集合可看做一个 JSON 数组，数组中的每个对象就是一条记录，记录的格式是 JSON 对象。https:&#x2F;&#x2F;developers.weixin.qq.com&#x2F;miniprogram&#x2F;dev&#x2F;wxcloud&#x2F;basis&#x2F;capabi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1-1微信小程序云开发（数据库入门使用）">
+<meta property="og:url" content="https://zhongqiyou.github.io/2020/05/18/wechat-db/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Document">
+<meta property="og:description" content="一、数据库（官方简介）云开发提供了一个 JSON 数据库，顾名思义，数据库中的每条记录都是一个 JSON 格式的对象。一个数据库可以有多个集合（相当于关系型数据中的表），集合可看做一个 JSON 数组，数组中的每个对象就是一条记录，记录的格式是 JSON 对象。https:&#x2F;&#x2F;developers.weixin.qq.com&#x2F;miniprogram&#x2F;dev&#x2F;wxcloud&#x2F;basis&#x2F;capabi">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://img20.360buyimg.com/babel/s590x470_jfs/t1/100441/5/12532/101378/5e4a3b4eE4c807442/bf61190512946daa.jpg.webp">
-<meta property="og:image" content="http://img14.360buyimg.com/pop/s590x470_jfs/t1/85986/37/11799/95055/5e3ce64bE2306ef3f/f3314abc6248bbb7.jpg.webp">
-<meta property="og:image" content="http://img13.360buyimg.com/pop/s590x470_jfs/t1/91015/40/10083/87653/5e15aa98Eea5f9113/e3165d6363298955.jpg.webp">
-<meta property="og:image" content="http://img14.360buyimg.com/pop/s590x470_jfs/t1/106727/35/11964/77968/5e44d8afEbe03f26b/d74b87fcced1e74a.jpg.webp">
-<meta property="og:image" content="http://img20.360buyimg.com/babel/s590x470_jfs/t1/100441/5/12532/101378/5e4a3b4eE4c807442/bf61190512946daa.jpg.webp">
-<meta property="article:published_time" content="2020-04-18T16:59:07.931Z">
-<meta property="article:modified_time" content="2020-02-24T08:55:54.901Z">
+<meta property="og:image" content="https://s1.ax1x.com/2020/05/18/YfyX7V.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/05/18/Yf6TUK.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/05/18/YfBVDf.png">
+<meta property="article:published_time" content="2020-05-18T06:39:33.949Z">
+<meta property="article:modified_time" content="2020-05-18T08:46:18.679Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="云开发">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://img20.360buyimg.com/babel/s590x470_jfs/t1/100441/5/12532/101378/5e4a3b4eE4c807442/bf61190512946daa.jpg.webp">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/05/18/YfyX7V.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://zhongqiyou.github.io/images/%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD/index.html">
+  <link rel="canonical" href="https://zhongqiyou.github.io/2020/05/18/wechat-db/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -345,19 +344,37 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="page-" class="article article-type-page" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-wechat-db" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      1-1微信小程序云开发（数据库入门使用）
+    </h1>
+  
+
       
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/images/%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD/index.html" class="article-date">
-	  <time datetime="2020-04-18T16:59:07.931Z" itemprop="datePublished">2020-04-19</time>
+	<a href="/2020/05/18/wechat-db/" class="article-date">
+	  <time datetime="2020-05-18T06:39:33.949Z" itemprop="datePublished">2020-05-18</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/" rel="tag">云开发</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -368,10 +385,10 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/images/%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD/index.html#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/18/wechat-db/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 5(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.2k(字)</span>
 	
 	
 
@@ -379,53 +396,32 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html lang="en">
+        <h2 id="一、数据库（官方简介）"><a href="#一、数据库（官方简介）" class="headerlink" title="一、数据库（官方简介）"></a>一、数据库（官方简介）</h2><p>云开发提供了一个 JSON 数据库，顾名思义，数据库中的每条记录都是一个 JSON 格式的对象。一个数据库可以有多个集合（相当于关系型数据中的表），集合可看做一个 JSON 数组，数组中的每个对象就是一条记录，记录的格式是 JSON 对象。<br><a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html#%E6%95%B0%E6%8D%AE%E5%BA%93" target="_blank" rel="noopener">https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html#%E6%95%B0%E6%8D%AE%E5%BA%93</a></p>
+<h2 id="二、使用"><a href="#二、使用" class="headerlink" title="二、使用"></a>二、使用</h2><p>1、为了更简单的入门 ，这里不使用官方提供的云开发模板 </p>
+<p><img src="https://s1.ax1x.com/2020/05/18/YfyX7V.png" alt="nocloud"></p>
+<p>1.1、我这里把不需要用到的文件进行了删除，最终文件结构展示<br><a href="https://s1.ax1x.com/2020/05/18/Yf6TUK.png" target="_blank" rel="noopener">查看大图</a><br><img src="https://s1.ax1x.com/2020/05/18/Yf6TUK.png" alt="structure"></p>
+<p>2、要想使用数据库，第一步初始化我们的云环境了。<br>app.js文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">App(&#123;</span><br><span class="line">&#x2F;&#x2F; 初始化云服务环境</span><br><span class="line">  onLaunch:function()&#123;</span><br><span class="line">    wx.cloud.init(&#123;</span><br><span class="line">      env: &#39;test-fph51&#39;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
+<p>2.1、打开云开发 ，点击设置查看云环境ID。上面env键 对应的值为 云环境ID<br>如有不懂，这里了解：<a href="https://zhongqiyou.github.io/2020/05/17/wechat-cloud/">https://zhongqiyou.github.io/2020/05/17/wechat-cloud/</a></p>
+<p>3.创建一个集合<br><a href="https://s1.ax1x.com/2020/05/18/YfBVDf.png" target="_blank" rel="noopener">查看大图</a><br><img src="https://s1.ax1x.com/2020/05/18/YfBVDf.png" alt="create"></p>
+<p>3.1、打开云开发 ， 点击数据库 ， 填写集合名称。我这里创建的是list</p>
+<p>4.集合的基本操作就是：增、删、改、查。与mysql中操作表的意思是一样的。<br>4.1、操作前 , 我把改动过的文件都展示出来:<br>pages/index/index.wxml文件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;view&gt;</span><br><span class="line">&lt;text&gt;云数据库测试:&lt;&#x2F;text&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;text&quot; bindinput&#x3D;&quot;getId&quot; placeholder&#x3D;&quot;ID&quot;&gt;&lt;&#x2F;input&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;text&quot; bindinput&#x3D;&quot;getName&quot; placeholder&#x3D;&quot;姓名&quot;&gt;&lt;&#x2F;input&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;text&quot; bindinput&#x3D;&quot;getAge&quot; placeholder&#x3D;&quot;年龄&quot;&gt;&lt;&#x2F;input&gt;</span><br><span class="line">&lt;button bindtap&#x3D;&quot;insert&quot; type&#x3D;&quot;primary&quot;&gt;增加数据&lt;&#x2F;button&gt;</span><br><span class="line">&lt;button bindtap&#x3D;&quot;select&quot; type&#x3D;&quot;primary&quot;&gt;查询数据&lt;&#x2F;button&gt;</span><br><span class="line">&lt;button bindtap&#x3D;&quot;update&quot; type&#x3D;&quot;primary&quot;&gt;修改数据&lt;&#x2F;button&gt;</span><br><span class="line">&lt;button bindtap&#x3D;&quot;delete&quot; type&#x3D;&quot;primary&quot;&gt;删除数据&lt;&#x2F;button&gt;</span><br><span class="line">&lt;&#x2F;view&gt;</span><br></pre></td></tr></table></figure>
+<p>pages/index/index.wxss文件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">button&#123;</span><br><span class="line">  margin: 5px auto;</span><br><span class="line">&#125;</span><br><span class="line">input[type&#x3D;text]&#123;</span><br><span class="line"> width: 80%;</span><br><span class="line"> margin: 5px auto;</span><br><span class="line"> border: 1px solid #cccccc;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<body>
-    <div class="container">
-    <!-- 轮播图片 -->
-    <ul>
-        <li>
-            <img src="http://img20.360buyimg.com/babel/s590x470_jfs/t1/100441/5/12532/101378/5e4a3b4eE4c807442/bf61190512946daa.jpg.webp" alt>
-        </li>
-        <li>
-            <img src="http://img14.360buyimg.com/pop/s590x470_jfs/t1/85986/37/11799/95055/5e3ce64bE2306ef3f/f3314abc6248bbb7.jpg.webp" alt>
-        </li>
-        <li>
-            <img src="http://img13.360buyimg.com/pop/s590x470_jfs/t1/91015/40/10083/87653/5e15aa98Eea5f9113/e3165d6363298955.jpg.webp" alt>
-        </li>
-        <li>
-            <img src="http://img14.360buyimg.com/pop/s590x470_jfs/t1/106727/35/11964/77968/5e44d8afEbe03f26b/d74b87fcced1e74a.jpg.webp" alt>
-        </li>
-        <li>
-            <img src="http://img20.360buyimg.com/babel/s590x470_jfs/t1/100441/5/12532/101378/5e4a3b4eE4c807442/bf61190512946daa.jpg.webp" alt>
-        </li>
-    </ul>
-    <!-- 小按钮 -->
-    <ol>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ol>
-    <!-- 左右按钮 -->
-    <div>
-        <a href="#javascript"><</a>
-        <a href="#javascript">></a>
-    </div>
-</div>
-</body>
-<script src="./index.js"></script>
-</html>
+<p>pages/index/index.js文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 声明要操作的数据集合</span><br><span class="line">const db &#x3D; wx.cloud.database().collection(&#39;list&#39;);</span><br><span class="line">Page(&#123;</span><br><span class="line">  data:&#123;</span><br><span class="line">    id:&quot;&quot; , </span><br><span class="line">    name:&quot;&quot; , </span><br><span class="line">    age:&quot;&quot;</span><br><span class="line">  &#125; , </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 获取表单中的value值</span><br><span class="line">  getId(event)&#123;</span><br><span class="line">   this.setData(&#123;</span><br><span class="line">     id:event.detail.value</span><br><span class="line">   &#125;)</span><br><span class="line">  &#125; , </span><br><span class="line">  getName(event)&#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      name: event.detail.value</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; , </span><br><span class="line">  getAge(event)&#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      age: event.detail.value</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; ,</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 插入数据</span><br><span class="line">  insert()&#123;</span><br><span class="line">    var _this &#x3D; this;</span><br><span class="line">    db.add(&#123;</span><br><span class="line">      &#x2F;&#x2F;参数</span><br><span class="line">      data: &#123;</span><br><span class="line">        _id: _this.data.id, </span><br><span class="line">        name: _this.data.name, </span><br><span class="line">        age: _this.data.age  </span><br><span class="line">      &#125;,</span><br><span class="line">      success: function (res) &#123;</span><br><span class="line">        console.log(res);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; , </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 查询数据</span><br><span class="line">  select() &#123; </span><br><span class="line">    var _this &#x3D; this;</span><br><span class="line">    </span><br><span class="line">    &#x2F;&#x2F; 指定查询（一条）</span><br><span class="line">    &#x2F;&#x2F; db.doc(_this.data.id).get(&#123;</span><br><span class="line">    &#x2F;&#x2F;   success: function (res) &#123;</span><br><span class="line">    &#x2F;&#x2F;     console.log(res)</span><br><span class="line">    &#x2F;&#x2F;   &#125;</span><br><span class="line">    &#x2F;&#x2F; &#125;)</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 条件查询（一条或多条）</span><br><span class="line">    &#x2F;&#x2F; db.where(&#123;</span><br><span class="line">    &#x2F;&#x2F;   name: _this.data.name ,</span><br><span class="line">    &#x2F;&#x2F;   age: _this.data.age</span><br><span class="line">    &#x2F;&#x2F; &#125;)</span><br><span class="line">    &#x2F;&#x2F; .get(&#123;</span><br><span class="line">    &#x2F;&#x2F;     success: function (res) &#123;</span><br><span class="line">    &#x2F;&#x2F;       console.log(res)</span><br><span class="line">    &#x2F;&#x2F;     &#125;</span><br><span class="line">    &#x2F;&#x2F;   &#125;)</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 所有查询（全部）</span><br><span class="line">    db.get(&#123;</span><br><span class="line">      success: function (res) &#123;</span><br><span class="line">        console.log(res.data)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; ,</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 更新数据</span><br><span class="line">  update() &#123; </span><br><span class="line">    var _this &#x3D; this;</span><br><span class="line">    &#x2F;&#x2F;传入对应数据的id</span><br><span class="line">    db.doc(_this.data.id).update(&#123;</span><br><span class="line">      data: &#123;</span><br><span class="line">        name: _this.data.name , </span><br><span class="line">        age:_this.data.age</span><br><span class="line">      &#125;,</span><br><span class="line">      success: function (res) &#123;</span><br><span class="line">        console.log(res)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; ,</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F; 删除数据</span><br><span class="line">  delete() &#123;</span><br><span class="line">    var _this &#x3D; this;</span><br><span class="line">    &#x2F;&#x2F;传入对应数据的id</span><br><span class="line">    db.doc(_this.data.id).remove(&#123;</span><br><span class="line">      success: function (res) &#123;</span><br><span class="line">        console.log(res)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>注意：1.添加时 ，集合中如果不传入”_id”字段，那么会自动生成。反之传入，会把该值保留为_id字段中的值。<br>     2.获取时 ，上面提到三种：通过对应id获取一条。通过满足条件获取一条或多条，官方还提供一些额外命令（这里不做介绍）。最后是获取全部，但是最多只能获取20条。现要突破获取更多的，需要借助“云函数”来实现(后面篇介绍)</p>
+<p>app.json文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;pages&quot;:[</span><br><span class="line">    &quot;pages&#x2F;index&#x2F;index&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;window&quot;:&#123;</span><br><span class="line">    &quot;backgroundTextStyle&quot;:&quot;light&quot;,</span><br><span class="line">    &quot;navigationBarBackgroundColor&quot;: &quot;#fff&quot;,</span><br><span class="line">    &quot;navigationBarTitleText&quot;: &quot;WeChat&quot;,</span><br><span class="line">    &quot;navigationBarTextStyle&quot;:&quot;black&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;style&quot;: &quot;v2&quot;,</span><br><span class="line">  &quot;sitemapLocation&quot;: &quot;sitemap.json&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因为把原来的pages/log文件夹删除。所以这里也要把配置过的log路径移除</p>
+<p>官方地址：<a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/init.html" target="_blank" rel="noopener">https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/init.html</a></p>
+<p>以上就是本文的全部内容 ， 本文仅供参考~</p>
+<p>如有代码错误 或者 你也有自己更好的想法。可以在下方留言。我洗耳恭听，共同进步…</p>
+<p>我会及时做出更正 , 谢谢~</p>
+
       
     </div>
     <div class="article-footer">
@@ -434,7 +430,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://zhongqiyou.github.io/images/%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD/index.html" title="" target="_blank" rel="external">https://zhongqiyou.github.io/images/%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD/index.html</a>
+      <a href="https://zhongqiyou.github.io/2020/05/18/wechat-db/" title="1-1微信小程序云开发（数据库入门使用）" target="_blank" rel="external">https://zhongqiyou.github.io/2020/05/18/wechat-db/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -477,6 +473,16 @@
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2020/05/17/wechat-cloud/" title="1-0微信小程序云开发（入门简介）"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
   
   
   <!-- Button trigger modal -->
@@ -540,6 +546,8 @@
 
 </main>
 
+
+
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 	
 	
@@ -595,6 +603,12 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/insight.js"></script>
 
 
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
