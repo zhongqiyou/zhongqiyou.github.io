@@ -79,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://zhongqiyou.github.io/images/custom-content-scroll/demo.html</loc>
-    
-    <lastmod>2020-04-19T05:33:05.002Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhongqiyou.github.io/2020/04/19/jquery-webpack/</loc>
     
     <lastmod>2020-04-19T03:46:55.047Z</lastmod>
@@ -128,72 +121,9 @@
   </url>
   
   <url>
-    <loc>https://zhongqiyou.github.io/images/%E9%9D%A2%E8%AF%95%E9%81%87%E9%A2%982/dist/index.html</loc>
-    
-    <lastmod>2020-03-24T15:15:26.056Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E9%9D%A2%E8%AF%95%E9%81%87%E9%A2%982/package-lock.json</loc>
-    
-    <lastmod>2020-03-18T15:48:38.204Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E9%9D%A2%E8%AF%95%E9%81%87%E9%A2%982/package.json</loc>
-    
-    <lastmod>2020-03-18T15:48:37.502Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E9%9D%A2%E8%AF%95%E9%81%87%E9%A2%982/index.html</loc>
-    
-    <lastmod>2020-03-18T15:19:05.459Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E9%9D%A2%E8%AF%95%E9%81%87%E9%A2%982/README.html</loc>
-    
-    <lastmod>2020-03-18T15:08:15.702Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhongqiyou.github.io/2019/12/30/wheelplanting/</loc>
     
     <lastmod>2020-03-08T05:57:55.837Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E9%9D%A2%E8%AF%95%E9%81%87%E9%A2%981/index.html</loc>
-    
-    <lastmod>2020-03-08T04:52:05.639Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E9%80%8F%E6%98%8E%E8%BD%AE%E6%92%AD/index.html</loc>
-    
-    <lastmod>2020-02-24T13:03:25.828Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E6%96%87%E5%AD%97%E8%BD%AE%E6%92%AD/index.html</loc>
-    
-    <lastmod>2020-02-24T12:13:17.706Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhongqiyou.github.io/images/%E6%97%A0%E7%BC%9D%E8%BD%AE%E6%92%AD/index.html</loc>
-    
-    <lastmod>2020-02-24T08:55:54.901Z</lastmod>
     
   </url>
   
@@ -240,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://zhongqiyou.github.io/tags/index.html</loc>
+    <loc>https://zhongqiyou.github.io/repository/index.html</loc>
     
     <lastmod>2019-12-24T07:52:51.661Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhongqiyou.github.io/repository/index.html</loc>
+    <loc>https://zhongqiyou.github.io/tags/index.html</loc>
     
     <lastmod>2019-12-24T07:52:51.661Z</lastmod>
     
